@@ -1,27 +1,45 @@
 package egovframework.sample.service.impl;
 
-public class SampleServiceImpl {
-	public SampleServiceImpl() throws Exception {
-		System.out.println("SampleService ===> Sample 생성");
-	}
+import egovframework.sample.service.impl.SampleService;
+import egovframework.sample.service.impl.SampleDAO;
 
+public class SampleServiceImpl implements SampleService {
+	//private SampleDAOJDBC sampleDAO;
+	private SampleDAO sampleDAO;
+	
+	public SampleServiceImpl() {
+		System.out.println("===> SampleServiceImpl(1) 생성");
+	//	sampleDAO = new SampleDAOJDBC();
+	}
+	
+	/*public SampleServiceImpl(SampleDAOJDBC sampleDAO) {
+		System.out.println("===> SampleServiceImpl(2) 생성");
+		this.sampleDAO = sampleDAO;
+	}*/
+	
+	public SampleServiceImpl(SampleDAO sampleDAO) {
+		System.out.println("===> SampleServiceImpl(2) 생성");
+		this.sampleDAO = sampleDAO;
+	}
+	
 	public void insertSample() throws Exception {
-		System.out.println("SampleService ===> Sample 등록");
+		sampleDAO.insertSample();
 	}
-
+	
 	public void updateSample() throws Exception {
-		System.out.println("SampleService ===> Sample 수정");
+		sampleDAO.updateSample();
 	}
-
+	
 	public void deleteSample() throws Exception {
-		System.out.println("SampleService ===> Sample 삭제");
+		sampleDAO.deleteSample();
 	}
-
+	
 	public void selectSample() throws Exception {
-		System.out.println("SampleService ===> Sample 상세 조회");
+		sampleDAO.selectSample();
+	}
+	
+	public void selectSampleList() throws Exception {
+		sampleDAO.selectSampleList();
 	}
 
-	public void selectSampleList() throws Exception {
-		System.out.println("SampleService ===> Sample 목록조회");
-	}
 }

@@ -1,3 +1,4 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/SampleWeb/src/main/resources/egovframework/spring/context-common.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage id\="com.springsource.sts.config.ui.editors.namespaces" index\="0" kind\="formPage"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/lab204-ibatis-tutor/src/test/resources/META-INF/spring/context-aspect.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/lab204-ibatis-tutor/src/test/resources/META-INF/spring/context-common.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/lab204-ibatis-tutor/src/test/resources/META-INF/spring/context-datasource.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>

@@ -2,7 +2,16 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
-	<bean id="sampleService" class="egovframework.sample.service.impl.SampleServiceImpl"></bean>
 
+	<bean id="sampleService" class="egovframework.sample.service.impl.SampleServiceImpl">
+		<!-- jdbc사용
+		<constructor-arg ref="jdbc"></constructor-arg> -->
+		
+		<constructor-arg ref="ibatis"></constructor-arg>
+	</bean>
+	<bean id="advancedSampleService" class="egovframework.sample.service.impl.AdvancedSampleServiceImpl"></bean>
+	
+	<bean id="jdbc" class="egovframework.sample.service.impl.SampleDAOJDBC"></bean>
+	
+	<bean id="ibatis" class="egovframework.sample.service.impl.SampleDAOIBatis"></bean>
 </beans>
